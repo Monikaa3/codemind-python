@@ -1,3 +1,4 @@
-r=int(input())
-a=3.14*r*r
-print("%.2f"%a)
+r=float(input())
+area=3.14*r*r
+c=round(area,2)
+print(c)
