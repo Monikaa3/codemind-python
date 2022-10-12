@@ -1,12 +1,20 @@
-n=int(input())
-while n!=0:
-    if n//10==0:
-        print(n)
-        break
+def rem(n):
+    count=0
+    while n>0:
+        r=n%10
+        count+=1
+        n=n//10
+    return count
+def sumnum(n):
+    sum=0
+    while n>0:
+        r=n%10
+        sum=sum+r
+        n=n//10
+    if rem(sum)==1:
+        print(sum)
     else:
-        s=0
-        while n:
-            r=n%10
-            n//=10
-            s+=r
-        n=s
+        sumnum(sum)
+n=int(input())
+sumnum(n)
+    
