@@ -1,21 +1,18 @@
-m=int(input())
-n=m%10
-m=m//10
-o=m%10
-m=m//10
-p=m%10
-m=m//10
-q=m%10
-m=m//10
-if(q==6):
-    q=9
-elif(p==6):
+n=int(input())
+k=n%10
+n=n//10
+l=n%10
+n=n//10
+p=n%10
+n=n//10
+d=n%10
+n=n//10
+if d==6:
+    d=9
+elif p==6:
     p=9
-elif(o==6):
-    o=9
-elif(n==6):
-    n=9
-print(q,end='')
-print(p,end='')
-print(o,end='')
-print(n,end='')
+elif l==6:
+    l=9
+else:
+    k=9
+print(d,p,l,k,sep="")
