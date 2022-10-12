@@ -1,11 +1,11 @@
-n = int(input())
-i=1
-x=0
-while i<=n/2 :
-    if n%i==0:
-        x+=1
-    i+=1
-if x==1:
+def prime(n):
+    for i in range(2,n):
+        if n%i==0:
+                return False
+    else:
+        return True
+n=int(input())
+if prime(n)==True:
     print("prime")
 else:
     print("not a prime")
