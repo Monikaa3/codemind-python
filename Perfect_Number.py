@@ -1,9 +1,9 @@
-number=int(input())
+n=int(input())
 sum=0
-for i in range(1,number):
-    if(number%i==0):
+for i in range(1,n):
+    if n%i==0:
         sum=sum+i
-if(sum==number):
-    print("True")
+if sum==n:
+    print(True)
 else:
-    print("False")
+    print(False)
