@@ -1,9 +1,13 @@
-p=int(input())
-a=list(map(int,input().split()))
-q=0
-for i in a:
-    if q<len(str(i)):
-        q=len(str(i))
-for i in a:
-    if len(str(i))==q:
+n=int(input())
+k=list(map(int,input().split()))
+e=[]
+for i in k:
+    s=str(i)
+    l=len(s)
+    e.append(l)
+m=max(e)
+for i in k:
+    s=str(i)
+    l=len(s)
+    if l==m:
         print(i,end=' ')
