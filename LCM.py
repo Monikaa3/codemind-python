@@ -1,13 +1,11 @@
-def compute_lcm(x,y):
-    if x>y:
-        greater=x
-    else:
-        greater=y
-    while(True):
-        if((greater%x==0)and(greater%y==0)):
-            lcm=greater
-            break
-        greater+=1
-    return lcm
-num1,num2=map(int,input().split())
-print(compute_lcm(num1,num2))
+n,m=map(int,input().split())
+if(n>m):
+    t=n
+else:
+    t=m
+i=1
+while (i!=0):
+    if((i*t)%m==0 and (i*t)%n==0):
+        print(i*t)
+        break
+    i+=1
